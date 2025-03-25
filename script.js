@@ -1,21 +1,21 @@
 // script.js
 function nextPage() {
-    // Redirige a otra página (puedes cambiar la URL si es necesario)
+    // Redirecting the page to yes
     window.location.href = './yes.html';
 }
 
 function moveButton() {
     const noButton = document.getElementById('noButton');
     
-    // Obtiene el ancho y alto de la ventana
+    // get the width and height of the row
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
     
-    // Genera nuevas posiciones aleatorias dentro de la ventana
+    // moving the button here and there 
     const newX = Math.random() * (windowWidth - noButton.offsetWidth);
     const newY = Math.random() * (windowHeight - noButton.offsetHeight);
     
-    // Aplica las nuevas posiciones al botón
+    // applying the button position umm styling 
     noButton.style.position = 'absolute';
     noButton.style.left = `${newX}px`;
     noButton.style.top = `${newY}px`;
